@@ -6,6 +6,7 @@ body{
   text-align: center;
   background-image: url('images/struckaxiom.png');
   /* Struck Axiom is from subtlepatterns.com */
+  color: #444;
 }
 #img_bar{
   width: 100%;
@@ -42,5 +43,6 @@ h2 {
 #content {
   margin: 0 auto;
   text-align: left;
-  width: 70%;
+  max-width: 960px;
+  width: 80%;
 }
