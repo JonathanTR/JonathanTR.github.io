@@ -58,6 +58,7 @@ h5 a {
 
 img {
   width: 45%;
+  border: 5px solid #fff;
 }
 
 img.left{
