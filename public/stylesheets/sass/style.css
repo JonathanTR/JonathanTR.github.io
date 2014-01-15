@@ -34,16 +34,7 @@ body {
           content: "Jonathan Turnbull-Reilly";
           font-size: 0.8em; } }
   body #container {
-    *zoom: 1;
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 5em; }
-    body #container:before, body #container:after {
-      content: " ";
-      display: table; }
-    body #container:after {
-      clear: both; }
     body #container #quick-intro {
       background: url(../../images/laptop.jpg) no-repeat;
       background-size: 40em;
@@ -106,32 +97,44 @@ body {
         margin-top: 1em;
         text-align: center;
         font-size: 2em; }
-    body #container #portfolio ul {
-      list-style: none;
-      padding-left: 0; }
-    @media screen and (max-width: 15em) {
-      body #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
+    body #container #portfolio {
+      *zoom: 1;
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto; }
+      body #container #portfolio:before, body #container #portfolio:after {
+        content: " ";
+        display: table; }
+      body #container #portfolio:after {
+        clear: both; }
+      body #container #portfolio ul {
+        list-style: none;
+        padding-left: 0; }
+      @media screen and (max-width: 15em) {
+        body #container #portfolio .project {
+          display: block;
+          float: left;
+          margin-right: 7.42297%;
+          width: 100%; }
+          body #container #portfolio .project:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) {
+        body #container #portfolio .project {
+          display: block;
+          float: left;
+          margin-right: 3.57866%;
+          width: 48.21067%;
+          margin-left: 25.89467%; }
+          body #container #portfolio .project:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 50em) {
+        body #container #portfolio .project {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-left: 0%; }
+          body #container #portfolio .project:last-child {
+            margin-right: 0; } }
+      body #container #portfolio .project img {
         width: 100%; }
-        body #container #portfolio .project:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 30em) {
-      body #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 3.57866%;
-        width: 48.21067%; }
-        body #container #portfolio .project:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 50em) {
-      body #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        body #container #portfolio .project:last-child {
-          margin-right: 0; } }
-    body #container #portfolio .project img {
-      width: 100%; }
