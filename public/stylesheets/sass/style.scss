@@ -1,0 +1,146 @@
+// Libraries 
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import "../../../vendor/fontello-718edc1b/css/jonathantr-embedded.css";
+@import "../../../vendor/fontello-718edc1b/css/jonathantr-codes.css";
+@import "./flatui_colors.css.scss";
+
+// Media Breakpoints
+$mobile: new-breakpoint(max-width 15em 4);
+$tablet: new-breakpoint(min-width 30em 8);
+$screen: new-breakpoint(min-width 50em 12);
+
+// Fonts 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400italic,400|Alegreya+SC:400,400italic);
+$headings-font: 'Montserrat', 'Helvetica', Sans-Serif;
+$text-font: 'Alegreya', 'Georgia', Palatino, Serif;
+
+// Colors 
+$charcoal: #262626;
+$robins-egg: #3CE1E8;
+$dusty-red: #C93724;
+$dry-yellow: #FFFB50;
+$ivory: #FFF;
+
+
+// Center it
+@mixin center-this($width: 50%, $height: 100%, $content-height:50%){
+  display: block;
+  width: $width;
+  margin: (($height - $content-height) / 0) auto;
+}
+
+// Variables
+$nav-height: 5em;
+$default-font-size: 15px;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $headings-font;
+}
+
+body {
+  .inner-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  background-color: $ivory;
+  font-family: $text-font;
+  font-size: $default-font-size;
+  nav {
+    margin-top: 0px;
+    position: fixed;
+    height: $nav-height;
+    width: 100%;
+    background-color: $charcoal;
+    h1 { color: $ivory }
+    #logo:after {
+      content: "JTR";
+      @include media($tablet){
+        content: "JonathanTR";
+      }
+      @include media($screen){
+        content: "Jonathan Turnbull-Reilly";
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  #container {
+    padding-top: $nav-height;
+    #quick-intro {
+      background: url(../../images/laptop.jpg) no-repeat;
+      background-size: 40em;
+      background-position: center;
+      color: $charcoal;
+      padding-top: $default-font-size / 2;
+      padding-bottom: 0px;
+      @include media($tablet){
+        @include background-size(cover);
+        padding: 6em 10% 12em;
+        text-align: center;
+        border-bottom: 1em solid $charcoal;
+      }
+      h1 {
+        padding: 0.5em;
+        background-color: transparentize($clouds, 0.25);
+        border-radius: 5px;
+        @include media($screen){
+          font-size: 2.25em;
+        }
+        #name {
+          color: $dusty-red;
+        }
+      }
+      #social-links {
+        background-color: $ivory;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0px;
+        padding: 10px;
+        @include media($tablet){
+          background-color: transparentize($clouds, 0.25);
+          border-radius: 5px;
+          width: 90%;
+          margin: 0 auto;
+        }
+        a{
+          color: $dusty-red;
+          font-size: 1.5em;
+          margin: 5%;
+          @include media($tablet){
+            font-size: 2em;
+          }
+        }
+      }   
+    }
+    #looking-for {
+      background-color: $dry-yellow;
+      padding: 2.5% 0;
+      border-bottom: 1px solid transparentize($charcoal, 0.5);
+      text-align: center;
+      .icons{
+        margin-top: 1em;
+        text-align: center;
+        font-size: 1.5em;
+      }
+    }
+    #invitation {
+      padding: 2.5% 0;
+      background-color: $robins-egg;
+      text-align: center;
+      border-bottom: 1px solid transparentize($charcoal, 0.5);
+      a{
+        text-decoration: none;
+        color: $charcoal;
+      }
+      .icons{
+        margin-top: 1em;
+        text-align: center;
+        font-size: 2em;
+      }
+    }
+    #portfolio {
+      
+    }
+  }
+}
