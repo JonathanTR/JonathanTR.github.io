@@ -66,6 +66,7 @@ body {
   }
 
   #container {
+    @include outer-container;
     padding-top: $nav-height;
     #quick-intro {
       background: url(../../images/laptop.jpg) no-repeat;
@@ -78,7 +79,7 @@ body {
         @include background-size(cover);
         padding: 6em 10% 12em;
         text-align: center;
-        border-bottom: 1em solid $charcoal;
+        border-bottom: 1px solid transparentize($charcoal, 0.5);
       }
       h1 {
         padding: 0.5em;
@@ -140,7 +141,24 @@ body {
       }
     }
     #portfolio {
-      
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .project {
+        @include media($mobile){
+          @include span-columns(4);
+        }
+        @include media($tablet){
+          @include span-columns(4);
+        }
+        @include media($screen){
+          @include span-columns(4);
+        }
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
