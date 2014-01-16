@@ -36,18 +36,17 @@ body {
   body #container {
     padding-top: 5em; }
     body #container #quick-intro {
+      padding-top: 7.5px;
+      padding-bottom: 0px;
       background: url(../../images/laptop.jpg) no-repeat;
       background-size: 40em;
       background-position: center;
-      color: #262626;
-      padding-top: 7.5px;
-      padding-bottom: 0px; }
+      color: #262626; }
       @media screen and (min-width: 30em) {
         body #container #quick-intro {
-          background-size: cover;
           padding: 6em 10% 12em;
-          text-align: center;
-          border-bottom: 1px solid rgba(38, 38, 38, 0.5); } }
+          background-size: cover;
+          text-align: center; } }
       body #container #quick-intro h1 {
         padding: 0.5em;
         background-color: rgba(236, 240, 241, 0.75);
@@ -79,7 +78,7 @@ body {
     body #container #looking-for {
       background-color: #fffb50;
       padding: 2.5% 0;
-      border-bottom: 1px solid rgba(38, 38, 38, 0.5);
+      /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
       text-align: center; }
       body #container #looking-for .icons {
         margin-top: 1em;
@@ -88,8 +87,7 @@ body {
     body #container #invitation {
       padding: 2.5% 0;
       background-color: #3ce1e8;
-      text-align: center;
-      border-bottom: 1px solid rgba(38, 38, 38, 0.5); }
+      text-align: center; }
       body #container #invitation a {
         text-decoration: none;
         color: #262626; }
@@ -137,4 +135,5 @@ body {
           body #container #portfolio .project:last-child {
             margin-right: 0; } }
       body #container #portfolio .project img {
-        width: 100%; }
+        width: 100%;
+        border: 1px solid rgba(38, 38, 38, 0.5); }
