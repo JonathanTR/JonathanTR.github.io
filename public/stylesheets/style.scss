@@ -1,0 +1,218 @@
+// Libraries 
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+@import '../../../vendor/bootstrap-navbar/css/bootstrap.min.css';
+@import "../../../vendor/fontello-c7b5ebca/css/jonathantr-embedded.css";
+@import "../../../vendor/fontello-c7b5ebca/css/jonathantr-codes.css";
+@import "modules/flatui_colors.css.scss";
+
+// Media Breakpoints
+$mobile: new-breakpoint(min-width 15em 4);
+$tablet: new-breakpoint(min-width 30em 8);
+$screen: new-breakpoint(min-width 50em 12);
+
+// Fonts 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400italic,400,700|Alegreya+SC:400,400italic);
+$headings-font: 'Montserrat', 'Helvetica', Sans-Serif;
+$text-font: 'Alegreya', 'Georgia', Palatino, Serif;
+
+// Colors 
+$charcoal: #262626;
+$robins-egg: #3FC0F2;
+$dusty-red: #C93724;
+$dry-yellow: #FFFB50;
+$ivory: #FFF;
+
+// Center it
+@mixin center-this($width: 50%, $height: 100%, $content-height:50%){
+  display: block;
+  width: $width;
+  margin: (($height - $content-height) / 0) auto;
+}
+
+// Variables
+$nav-height: 5em;
+$default-font-size: 15px;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $headings-font;
+}
+
+.inner-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $ivory;
+  font-family: $text-font;
+  font-size: $default-font-size;
+}
+
+@import 'partials/navbar';
+
+#container {
+  padding-top: 50px;
+}
+
+#quick-intro {
+  padding-top: $default-font-size / 2;
+  padding-bottom: 0px;
+  background-position: center;
+  background-size: 40em;
+  background: url(../images/laptop.jpg) no-repeat;
+  color: $charcoal;
+  @include media($tablet){
+    padding: 6em 10% 12em;
+    @include background-size(cover);
+    text-align: center;
+  }
+  h1 {
+    padding: 0.5em;
+    background-color: transparentize($clouds, 0.25);
+    border-radius: 5px;
+    @include media($screen){
+      font-size: 2.25em;
+    }
+    #name {
+      color: $dusty-red;
+    }
+  }
+  #social-links {
+    background-color: $ivory;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10px;
+    @include media($tablet){
+      background-color: transparentize($clouds, 0.25);
+      border-radius: 5px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    a{
+      color: $dusty-red;
+      font-size: 1.5em;
+      margin: 5%;
+      @include media($tablet){
+        font-size: 2em;
+      }
+    }
+  }   
+}
+
+#looking-for {
+  background-color: $dry-yellow;
+  padding: 2.5% 0;
+  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
+  text-align: center;
+  .icons{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+#invitation {
+  padding: 2.5% 0;
+  background-color: $robins-egg;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: $charcoal;
+  }
+  .icons{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+#portfolio {
+  @include outer-container;
+  padding: 2em 0 4em;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .project {
+    @include media($mobile){
+      @include span-columns(4 of 4);
+    }
+    @include media($tablet){
+      @include span-columns(4);
+      @include shift(2);
+    }
+    @include media($screen){
+      @include span-columns(4);
+      @include shift(0);
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+#skills {
+  background-color: $clouds;
+  padding: 2em 0 2em;
+  text-align: center;
+  i {
+    font-size: 2em;
+  }
+  ul {
+    @include outer-container;
+    padding: 2em 0 0 0;
+    margin-bottom: 2em;
+    .skill-category {
+      h3 {
+        margin: 0.2em;
+      }
+      text-align: center;
+      .list-in-column{
+        padding: 0;
+      }
+      @include media($mobile){
+        @include span-columns(4);
+      }
+      @include media($tablet){
+        @include span-columns(4);
+        #first-row{
+          @include row();
+        }
+        #second-row{
+          @include row();
+        }
+      }
+      @include media($screen){
+        @include span-columns(3);
+      }
+    }
+  }
+  p {
+    font-size: 1.2em;
+    margin: 0.2em;
+  }
+}
+
+#about-me {
+  img {
+    margin-bottom: 0.5em;
+    border-radius: 20%;
+    border: 10px solid $dry-yellow;
+    @include media($mobile){
+      @include span-columns(4);
+    }
+    @include media($tablet){
+      @include span-columns(4);
+    }
+    @include media($screen){
+      width: 20em;
+    }
+  }
+  #personal-history {
+    font-size: 1.2em;
+    max-width: 80em;
+  }
+}

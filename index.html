@@ -6,16 +6,16 @@
   <script type="text/javascript" src='public/javascripts/jquery-1.10.2.min.js'></script>
   <script type="text/javascript" src='public/javascripts/jquery.lettering-0.6.min.js'></script>
   <link rel="stylesheet" type="text/css" href="">
-  <link rel="stylesheet" type="text/css" href="public/stylesheets/sass/style.css">
-  <link rel="stylesheet" type="text/css" href="public/stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/vendor/normalize.css">
 </head>
 <body>
 
-  <nav>
-    <div class='inner-container'>
-      <h1 id='logo'></h1>
-    </div>
-  </nav>
+<nav class="navbar navbar-default" role="navigation">
+  <div class='inner-container'>
+    <a class="navbar-brand" href="/"></a>
+  </div>
+</nav>
 
   <div id="container">
 
@@ -48,7 +48,7 @@
         <ul>
 
           <li class="project">
-            <a href='http://getessence.herokuapp.com'><img src="public/images/Essence.jpg"></a>
+            <a href='http://getessence.herokuapp.com'><img src="public/images/essence.jpg"></a>
             <h4>Essence</h4>
             <p>Essence was designed to provide students a tool for selecting and sorting short snippets of text while reading, with the option of returning to the snippet's source.</p>
           </li>
@@ -69,9 +69,59 @@
       </div>
     </div>
     
-    <div id='dev-bootcamp'></div>
+    <div id='skills'>
+      <div class='inner-container'>
+        <h1>Skills</h1>
+        <ul>
 
-    <div id='skills'></div>
+          <div id='first-row'>
+            <li class='skill-category'>
+              <i class='icon-chat'></i>
+              <h3>Languages</h3>
+              <ul class='list-in-column'>
+                <p>Ruby</p>
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SASS</p>
+              </ul>
+            </li>
+            <li class='skill-category'>
+              <i class='icon-ok'></i>
+              <h3>Testing</h3>
+              <ul class='list-in-column'>
+                <p>RSpec</p>
+                <p>Capybara</p>
+                <p>Jasmine</p>
+              </ul>
+            </li>
+          </div>
+
+          <div id='second-row'>
+            <li class='skill-category'>
+              <i class='icon-th-list'></i>
+              <h3>Frameworks</h3>
+              <ul class='list-in-column'>
+                <p>Rails</p>
+                <p>Sinatra</p>
+              </ul>
+            </li>
+
+            <li class='skill-category'>
+              <i class='icon-pencil-1'></i>
+              <h3>Graphic Design</h3>
+              <ul class='list-in-column'>
+                <p>Photoshop</p>
+                <p>Illustrator</p>
+                <p>InDesign</p>
+                <p>Acrobat Pro</p>
+              </ul>
+            </li>
+          </div>
+
+        </ul>
+      </div>
+    </div>
 
     <div id='invitation'>
       <div class='inner-container'>
@@ -82,7 +132,34 @@
       </div>
     </div>
 
-    <div id='about-me'></div>
+    <div id='about-me'>
+
+      <div class='inner-container'>
+        <h1>About Me</h1>
+        <img src="public/images/jonathan_bw.jpg">
+
+        <div id='personal-history'>
+          <p>
+            I've been a lot of things: a landscaper, a student, an overnight hotel manager, a writer, a volunteer coordinator, a warehouse manager, a marketing professional, a James Dean impersonater - the list goes on. Nothing has sparked my imagination and interest quite like coding.
+          </p>
+          <p>
+            I took my first CS class in Python during my last semester of college (I needed to fulfill a lab credit and I didn't want to disect things). It ended up being my favorite class in college. It wasn't until last year, though, that a friend sold me on the idea that I could keep pursuing that dream through <a href="http://www.devbootcamp">Dev Bootcamp</a>, a 9-week hurricane of training in Ruby, Rails, JavaScript, TDD, Git, Databases, learning acceleration techniques, and so much more.
+          </p>
+          <p>
+            I was hooked. I have been ever since and I don't see myself stopping <em>any time soon</em>.
+          </p>
+          <p>
+            <b>Outside of coding,</b> I love cooking (especially with <a href="http://www.americastestkitchen.com">America's Test Kitchen</a> - cooking and science belong together), hiking, making music, reading, and writing short stories.
+          </p>
+
+          <p>
+            <b>Right now I'm reading:</b> <a href="http://www.amazon.com/The-Bully-Pulpit-Roosevelt-Journalism/dp/141654786X/ref=sr_1_1?ie=UTF8&qid=1389988235&sr=8-1&keywords=the+bully+pulpit">The Bully Pulpit</a> by Doris Kearnes Goodwin. <em>I learned that:</em> One time, Teddy Roosevelt punched out two political rivals at a bar (he was an elected official at the time). When they regained consciousness, he invited them to sit down for a drink. What a guy!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
 
     <div id='contact'></div>
 

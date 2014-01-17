@@ -1,0 +1,247 @@
+@import url(../../../vendor/bootstrap-navbar/css/bootstrap.min.css);
+@import url(../../../vendor/fontello-c7b5ebca/css/jonathantr-embedded.css);
+@import url(../../../vendor/fontello-c7b5ebca/css/jonathantr-codes.css);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400italic,400,700|Alegreya+SC:400,400italic);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica", Sans-Serif; }
+
+.inner-container {
+  width: 90%;
+  margin: 0 auto; }
+
+body {
+  background-color: white;
+  font-family: "Alegreya", "Georgia", Palatino, Serif;
+  font-size: 15px; }
+
+.navbar {
+  position: fixed;
+  margin-bottom: 0;
+  background-color: #262626;
+  border: none;
+  width: 100%;
+  border-radius: 0px; }
+  .navbar a.navbar-brand {
+    padding-left: 0; }
+  .navbar .navbar-brand:after {
+    font-family: "Montserrat", "Helvetica", Sans-Serif;
+    font-size: 1.5em;
+    line-height: 50px;
+    content: "JTR"; }
+    @media screen and (min-width: 30em) {
+      .navbar .navbar-brand:after {
+        content: "JonathanTR"; } }
+    @media screen and (min-width: 50em) {
+      .navbar .navbar-brand:after {
+        content: "Jonathan Turnbull-Reilly";
+        font-size: 1.2em; } }
+
+#container {
+  padding-top: 50px; }
+
+#quick-intro {
+  padding-top: 7.5px;
+  padding-bottom: 0px;
+  background-position: center;
+  background-size: 40em;
+  background: url(../images/laptop.jpg) no-repeat;
+  color: #262626; }
+  @media screen and (min-width: 30em) {
+    #quick-intro {
+      padding: 6em 10% 12em;
+      background-size: cover;
+      text-align: center; } }
+  #quick-intro h1 {
+    padding: 0.5em;
+    background-color: rgba(236, 240, 241, 0.75);
+    border-radius: 5px; }
+    @media screen and (min-width: 50em) {
+      #quick-intro h1 {
+        font-size: 2.25em; } }
+    #quick-intro h1 #name {
+      color: #c93724; }
+  #quick-intro #social-links {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10px; }
+    @media screen and (min-width: 30em) {
+      #quick-intro #social-links {
+        background-color: rgba(236, 240, 241, 0.75);
+        border-radius: 5px;
+        width: 90%;
+        margin: 0 auto; } }
+    #quick-intro #social-links a {
+      color: #c93724;
+      font-size: 1.5em;
+      margin: 5%; }
+      @media screen and (min-width: 30em) {
+        #quick-intro #social-links a {
+          font-size: 2em; } }
+
+#looking-for {
+  background-color: #fffb50;
+  padding: 2.5% 0;
+  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
+  text-align: center; }
+  #looking-for .icons {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em; }
+
+#invitation {
+  padding: 2.5% 0;
+  background-color: #3fc0f2;
+  text-align: center; }
+  #invitation a {
+    text-decoration: none;
+    color: #262626; }
+  #invitation .icons {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em; }
+
+#portfolio {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 0 4em; }
+  #portfolio:before, #portfolio:after {
+    content: " ";
+    display: table; }
+  #portfolio:after {
+    clear: both; }
+  #portfolio ul {
+    list-style: none;
+    padding-left: 0; }
+  @media screen and (min-width: 15em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 30em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%;
+      margin-left: 25.89467%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 50em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 0%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  #portfolio .project img {
+    width: 100%;
+    border-radius: 10px; }
+
+#skills {
+  background-color: #ecf0f1;
+  padding: 2em 0 2em;
+  text-align: center; }
+  #skills i {
+    font-size: 2em; }
+  #skills ul {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 0 0 0;
+    margin-bottom: 2em; }
+    #skills ul:before, #skills ul:after {
+      content: " ";
+      display: table; }
+    #skills ul:after {
+      clear: both; }
+    #skills ul .skill-category {
+      text-align: center; }
+      #skills ul .skill-category h3 {
+        margin: 0.2em; }
+      #skills ul .skill-category .list-in-column {
+        padding: 0; }
+      @media screen and (min-width: 15em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 7.42297%;
+          width: 100%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 3.57866%;
+          width: 48.21067%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; }
+          #skills ul .skill-category #first-row {
+            *zoom: 1;
+            display: block; }
+            #skills ul .skill-category #first-row:before, #skills ul .skill-category #first-row:after {
+              content: " ";
+              display: table; }
+            #skills ul .skill-category #first-row:after {
+              clear: both; }
+          #skills ul .skill-category #second-row {
+            *zoom: 1;
+            display: block; }
+            #skills ul .skill-category #second-row:before, #skills ul .skill-category #second-row:after {
+              content: " ";
+              display: table; }
+            #skills ul .skill-category #second-row:after {
+              clear: both; } }
+      @media screen and (min-width: 50em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; } }
+  #skills p {
+    font-size: 1.2em;
+    margin: 0.2em; }
+
+#about-me img {
+  margin-bottom: 0.5em;
+  border-radius: 20%;
+  border: 10px solid #fffb50; }
+  @media screen and (min-width: 15em) {
+    #about-me img {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      #about-me img:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 30em) {
+    #about-me img {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      #about-me img:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 50em) {
+    #about-me img {
+      width: 20em; } }
+#about-me #personal-history {
+  font-size: 1.2em;
+  max-width: 80em; }
