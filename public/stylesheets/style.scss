@@ -152,3 +152,10 @@ body {
     }
   }
 }
+
+#about-me {
+  img {
+    border-radius: 20%;
+    border: 10px solid $dry-yellow;
+  }
+}

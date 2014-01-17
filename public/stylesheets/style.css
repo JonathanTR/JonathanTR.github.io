@@ -147,3 +147,7 @@ body {
   #portfolio .project img {
     width: 100%;
     border: 1px solid rgba(38, 38, 38, 0.5); }
+
+#about-me img {
+  border-radius: 20%;
+  border: 10px solid #fffb50; }
