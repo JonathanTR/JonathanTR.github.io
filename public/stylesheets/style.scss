@@ -139,8 +139,8 @@ body {
       @include span-columns(4);
     }
     @include media($tablet){
-      @include span-columns(4);
-      @include shift(2);
+      @include span-columns(6);
+      @include shift(1);
     }
     @include media($screen){
       @include span-columns(4);
