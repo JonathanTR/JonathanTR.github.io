@@ -38,6 +38,27 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $headings-font;
 }
 
+.navbar {
+  position: fixed;
+  margin-bottom: 0;
+  background-color: $charcoal;
+  border: none;
+  .navbar-brand:after {
+    font-family: $headings-font;
+    font-size: 1.5em;
+    line-height: 50px;
+    content: "JTR";
+    @include media($tablet){
+      content: "JonathanTR";
+    }
+    @include media($screen){
+      content: "Jonathan Turnbull-Reilly";
+      font-size: 1.2em;
+    }
+  }
+}
+
+
 body {
   .inner-container{
     width: 90%;
@@ -53,20 +74,10 @@ body {
     width: 100%;
     background-color: $charcoal;
     h1 { color: $ivory }
-    #logo:after {
-      content: "JTR";
-      @include media($tablet){
-        content: "JonathanTR";
-      }
-      @include media($screen){
-        content: "Jonathan Turnbull-Reilly";
-        font-size: 0.8em;
-      }
-    }
   }
 
   #container {
-    padding-top: $nav-height;
+    padding-top: 50px;
     #quick-intro {
       padding-top: $default-font-size / 2;
       padding-bottom: 0px;
