@@ -48,7 +48,7 @@ body {
     body #container #quick-intro {
       padding-top: 7.5px;
       padding-bottom: 0px;
-      background: url(../../images/laptop.jpg) no-repeat;
+      background: url(../images/laptop.jpg) no-repeat;
       background-size: 40em;
       background-position: center;
       color: #262626; }

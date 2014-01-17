@@ -1,10 +1,10 @@
 // Libraries 
-@import 'bourbon/bourbon';
-@import 'neat/neat';
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
 @import '../../../vendor/bootstrap-navbar/css/bootstrap.min.css';
 @import "../../../vendor/fontello-718edc1b/css/jonathantr-embedded.css";
 @import "../../../vendor/fontello-718edc1b/css/jonathantr-codes.css";
-@import "./flatui_colors.css.scss";
+@import "modules/flatui_colors.css.scss";
 
 // Media Breakpoints
 $mobile: new-breakpoint(max-width 15em 4);
@@ -81,7 +81,7 @@ body {
     #quick-intro {
       padding-top: $default-font-size / 2;
       padding-bottom: 0px;
-      background: url(../../images/laptop.jpg) no-repeat;
+      background: url(../images/laptop.jpg) no-repeat;
       background-size: 40em;
       background-position: center;
       color: $charcoal;
