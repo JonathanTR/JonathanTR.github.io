@@ -130,6 +130,7 @@ body {
 
 #portfolio {
   @include outer-container;
+  padding: 2em 0 4em;
   ul {
     list-style: none;
     padding-left: 0;
@@ -139,8 +140,8 @@ body {
       @include span-columns(4 of 4);
     }
     @include media($tablet){
-      @include span-columns(4, table);
-      @include shift();
+      @include span-columns(4);
+      @include shift(2);
     }
     @include media($screen){
       @include span-columns(4);
@@ -154,27 +155,35 @@ body {
 }
 
 #skills {
-  padding-bottom: 2em;
-  @include outer-container;
+  background-color: $clouds;
+  padding: 2em 0 2em;
+  text-align: center;
   i {
     font-size: 2em;
   }
-  #first-row{
-    @include row();
-  }
-  #second-row{
-    @include row();
-  }
   ul {
-    padding-left: 0;
+    @include outer-container;
+    padding: 2em 0 0 0;
+    margin-bottom: 2em;
     .skill-category {
-      margin-right: 0px;
+      h3 {
+        margin: 0.2em;
+      }
       text-align: center;
+      .list-in-column{
+        padding: 0;
+      }
       @include media($mobile){
         @include span-columns(4);
       }
       @include media($tablet){
         @include span-columns(4);
+        #first-row{
+          @include row();
+        }
+        #second-row{
+          @include row();
+        }
       }
       @include media($screen){
         @include span-columns(3);
