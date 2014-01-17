@@ -5,6 +5,7 @@
   border: none;
   width: 100%;
   border-radius: 0px;
+  a.navbar-brand {padding-left: 0;}
   .navbar-brand:after {
     font-family: $headings-font;
     font-size: 1.5em;
