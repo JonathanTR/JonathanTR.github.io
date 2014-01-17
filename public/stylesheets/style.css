@@ -148,7 +148,7 @@ body {
         margin-right: 0; } }
   #portfolio .project img {
     width: 100%;
-    border: 1px solid rgba(38, 38, 38, 0.5); }
+    border-radius: 10px; }
 
 #about-me img {
   margin-bottom: 0.5em;
