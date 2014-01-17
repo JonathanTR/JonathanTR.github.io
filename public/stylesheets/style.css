@@ -150,6 +150,51 @@ body {
     width: 100%;
     border-radius: 10px; }
 
+#skills {
+  padding-bottom: 2em;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #skills:before, #skills:after {
+    content: " ";
+    display: table; }
+  #skills:after {
+    clear: both; }
+  #skills ul {
+    padding-left: 0; }
+  #skills li {
+    text-align: center; }
+    @media screen and (min-width: 15em) {
+      #skills li {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        #skills li:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 30em) {
+      #skills li {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%;
+        margin-left: 25.89467%; }
+        #skills li:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 50em) {
+      #skills li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-left: 0%; }
+        #skills li:last-child {
+          margin-right: 0; } }
+  #skills p {
+    font-size: 1.2em;
+    margin: 0.2em; }
+
 #about-me img {
   margin-bottom: 0.5em;
   border-radius: 20%;

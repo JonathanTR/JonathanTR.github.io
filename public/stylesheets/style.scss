@@ -154,7 +154,29 @@ body {
 }
 
 #skills {
-
+  padding-bottom: 2em;
+  @include outer-container;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    text-align: center;
+    @include media($mobile){
+      @include span-columns(4);
+    }
+    @include media($tablet){
+      @include span-columns(4);
+      @include shift(2);
+    }
+    @include media($screen){
+      @include span-columns(3);
+      @include shift(0);
+    }
+  }
+  p {
+    font-size: 1.2em;
+    margin: 0.2em;
+  }
 }
 
 #about-me {
