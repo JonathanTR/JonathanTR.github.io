@@ -38,18 +38,17 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $headings-font;
 }
 
-@import 'partials/navbar';
 
+.inner-container{
+  width: 90%;
+  margin: 0 auto;
+}
 
 body {
-  .inner-container{
-    width: 90%;
-    margin: 0 auto;
-  }
   background-color: $ivory;
   font-family: $text-font;
   font-size: $default-font-size;
-
+  @import 'partials/navbar';
   #container {
     padding-top: 50px;
     #quick-intro {
