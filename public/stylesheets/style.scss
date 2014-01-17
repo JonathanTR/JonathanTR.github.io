@@ -155,7 +155,20 @@ body {
 
 #about-me {
   img {
+    margin-bottom: 0.5em;
     border-radius: 20%;
     border: 10px solid $dry-yellow;
+    @include media($mobile){
+      @include span-columns(4);
+    }
+    @include media($tablet){
+      @include span-columns(4);
+    }
+    @include media($screen){
+      width: 20em;
+    }
+  }
+  #self-description {
+    font-size: 1.2em;
   }
 }
