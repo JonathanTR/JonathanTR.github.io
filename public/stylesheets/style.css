@@ -45,9 +45,9 @@ body {
 #quick-intro {
   padding-top: 7.5px;
   padding-bottom: 0px;
-  background: url(../images/laptop.jpg) no-repeat;
-  background-size: 40em;
   background-position: center;
+  background-size: 40em;
+  background: url(../images/laptop.jpg) no-repeat;
   color: #262626; }
   @media screen and (min-width: 30em) {
     #quick-intro {

@@ -55,97 +55,100 @@ body {
   padding-top: 50px;
 }
 
-    #quick-intro {
-      padding-top: $default-font-size / 2;
-      padding-bottom: 0px;
-      background: url(../images/laptop.jpg) no-repeat;
-      background-size: 40em;
-      background-position: center;
-      color: $charcoal;
+#quick-intro {
+  padding-top: $default-font-size / 2;
+  padding-bottom: 0px;
+  background-position: center;
+  background-size: 40em;
+  background: url(../images/laptop.jpg) no-repeat;
+  color: $charcoal;
+  @include media($tablet){
+    padding: 6em 10% 12em;
+    @include background-size(cover);
+    text-align: center;
+  }
+  h1 {
+    padding: 0.5em;
+    background-color: transparentize($clouds, 0.25);
+    border-radius: 5px;
+    @include media($screen){
+      font-size: 2.25em;
+    }
+    #name {
+      color: $dusty-red;
+    }
+  }
+  #social-links {
+    background-color: $ivory;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10px;
+    @include media($tablet){
+      background-color: transparentize($clouds, 0.25);
+      border-radius: 5px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    a{
+      color: $dusty-red;
+      font-size: 1.5em;
+      margin: 5%;
       @include media($tablet){
-        padding: 6em 10% 12em;
-        @include background-size(cover);
-        text-align: center;
-      }
-      h1 {
-        padding: 0.5em;
-        background-color: transparentize($clouds, 0.25);
-        border-radius: 5px;
-        @include media($screen){
-          font-size: 2.25em;
-        }
-        #name {
-          color: $dusty-red;
-        }
-      }
-      #social-links {
-        background-color: $ivory;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 0px;
-        padding: 10px;
-        @include media($tablet){
-          background-color: transparentize($clouds, 0.25);
-          border-radius: 5px;
-          width: 90%;
-          margin: 0 auto;
-        }
-        a{
-          color: $dusty-red;
-          font-size: 1.5em;
-          margin: 5%;
-          @include media($tablet){
-            font-size: 2em;
-          }
-        }
-      }   
-    }
-    #looking-for {
-      background-color: $dry-yellow;
-      padding: 2.5% 0;
-      /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
-      text-align: center;
-      .icons{
-        margin-top: 1em;
-        text-align: center;
-        font-size: 1.5em;
-      }
-    }
-    #invitation {
-      padding: 2.5% 0;
-      background-color: $robins-egg;
-      text-align: center;
-      a{
-        text-decoration: none;
-        color: $charcoal;
-      }
-      .icons{
-        margin-top: 1em;
-        text-align: center;
         font-size: 2em;
       }
     }
-    #portfolio {
-      @include outer-container;
-      ul {
-        list-style: none;
-        padding-left: 0;
-      }
-      .project {
-        @include media($mobile){
-          @include span-columns(4);
-        }
-        @include media($tablet){
-          @include span-columns(4);
-          @include shift(2);
-        }
-        @include media($screen){
-          @include span-columns(4);
-          @include shift(0);
-        }
-        img {
-          width: 100%;
-          border: 1px solid transparentize($charcoal, 0.5);
-        }
-      }
+  }   
+}
+
+#looking-for {
+  background-color: $dry-yellow;
+  padding: 2.5% 0;
+  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
+  text-align: center;
+  .icons{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+#invitation {
+  padding: 2.5% 0;
+  background-color: $robins-egg;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: $charcoal;
+  }
+  .icons{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+#portfolio {
+  @include outer-container;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .project {
+    @include media($mobile){
+      @include span-columns(4);
     }
+    @include media($tablet){
+      @include span-columns(4);
+      @include shift(2);
+    }
+    @include media($screen){
+      @include span-columns(4);
+      @include shift(0);
+    }
+    img {
+      width: 100%;
+      border: 1px solid transparentize($charcoal, 0.5);
+    }
+  }
+}
