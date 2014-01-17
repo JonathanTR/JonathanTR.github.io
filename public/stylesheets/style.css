@@ -41,105 +41,109 @@ body {
 
 #container {
   padding-top: 50px; }
-  #container #quick-intro {
-    padding-top: 7.5px;
-    padding-bottom: 0px;
-    background: url(../images/laptop.jpg) no-repeat;
-    background-size: 40em;
-    background-position: center;
-    color: #262626; }
-    @media screen and (min-width: 30em) {
-      #container #quick-intro {
-        padding: 6em 10% 12em;
-        background-size: cover;
-        text-align: center; } }
-    #container #quick-intro h1 {
-      padding: 0.5em;
-      background-color: rgba(236, 240, 241, 0.75);
-      border-radius: 5px; }
-      @media screen and (min-width: 50em) {
-        #container #quick-intro h1 {
-          font-size: 2.25em; } }
-      #container #quick-intro h1 #name {
-        color: #c93724; }
-    #container #quick-intro #social-links {
-      background-color: white;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 0px;
-      padding: 10px; }
-      @media screen and (min-width: 30em) {
-        #container #quick-intro #social-links {
-          background-color: rgba(236, 240, 241, 0.75);
-          border-radius: 5px;
-          width: 90%;
-          margin: 0 auto; } }
-      #container #quick-intro #social-links a {
-        color: #c93724;
-        font-size: 1.5em;
-        margin: 5%; }
-        @media screen and (min-width: 30em) {
-          #container #quick-intro #social-links a {
-            font-size: 2em; } }
-  #container #looking-for {
-    background-color: #fffb50;
-    padding: 2.5% 0;
-    /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
-    text-align: center; }
-    #container #looking-for .icons {
-      margin-top: 1em;
-      text-align: center;
-      font-size: 1.5em; }
-  #container #invitation {
-    padding: 2.5% 0;
-    background-color: #3ce1e8;
-    text-align: center; }
-    #container #invitation a {
-      text-decoration: none;
-      color: #262626; }
-    #container #invitation .icons {
-      margin-top: 1em;
-      text-align: center;
-      font-size: 2em; }
-  #container #portfolio {
-    *zoom: 1;
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    #container #portfolio:before, #container #portfolio:after {
-      content: " ";
-      display: table; }
-    #container #portfolio:after {
-      clear: both; }
-    #container #portfolio ul {
-      list-style: none;
-      padding-left: 0; }
-    @media screen and (max-width: 15em) {
-      #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
-        #container #portfolio .project:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 30em) {
-      #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 3.57866%;
-        width: 48.21067%;
-        margin-left: 25.89467%; }
-        #container #portfolio .project:last-child {
-          margin-right: 0; } }
+
+#quick-intro {
+  padding-top: 7.5px;
+  padding-bottom: 0px;
+  background: url(../images/laptop.jpg) no-repeat;
+  background-size: 40em;
+  background-position: center;
+  color: #262626; }
+  @media screen and (min-width: 30em) {
+    #quick-intro {
+      padding: 6em 10% 12em;
+      background-size: cover;
+      text-align: center; } }
+  #quick-intro h1 {
+    padding: 0.5em;
+    background-color: rgba(236, 240, 241, 0.75);
+    border-radius: 5px; }
     @media screen and (min-width: 50em) {
-      #container #portfolio .project {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        margin-left: 0%; }
-        #container #portfolio .project:last-child {
-          margin-right: 0; } }
-    #container #portfolio .project img {
-      width: 100%;
-      border: 1px solid rgba(38, 38, 38, 0.5); }
+      #quick-intro h1 {
+        font-size: 2.25em; } }
+    #quick-intro h1 #name {
+      color: #c93724; }
+  #quick-intro #social-links {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10px; }
+    @media screen and (min-width: 30em) {
+      #quick-intro #social-links {
+        background-color: rgba(236, 240, 241, 0.75);
+        border-radius: 5px;
+        width: 90%;
+        margin: 0 auto; } }
+    #quick-intro #social-links a {
+      color: #c93724;
+      font-size: 1.5em;
+      margin: 5%; }
+      @media screen and (min-width: 30em) {
+        #quick-intro #social-links a {
+          font-size: 2em; } }
+
+#looking-for {
+  background-color: #fffb50;
+  padding: 2.5% 0;
+  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
+  text-align: center; }
+  #looking-for .icons {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em; }
+
+#invitation {
+  padding: 2.5% 0;
+  background-color: #3ce1e8;
+  text-align: center; }
+  #invitation a {
+    text-decoration: none;
+    color: #262626; }
+  #invitation .icons {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em; }
+
+#portfolio {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #portfolio:before, #portfolio:after {
+    content: " ";
+    display: table; }
+  #portfolio:after {
+    clear: both; }
+  #portfolio ul {
+    list-style: none;
+    padding-left: 0; }
+  @media screen and (max-width: 15em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 30em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%;
+      margin-left: 25.89467%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 50em) {
+    #portfolio .project {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 0%; }
+      #portfolio .project:last-child {
+        margin-right: 0; } }
+  #portfolio .project img {
+    width: 100%;
+    border: 1px solid rgba(38, 38, 38, 0.5); }
