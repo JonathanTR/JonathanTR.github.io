@@ -136,11 +136,11 @@ body {
   }
   .project {
     @include media($mobile){
-      @include span-columns(4);
+      @include span-columns(4 of 4);
     }
     @include media($tablet){
-      @include span-columns(6);
-      @include shift(1);
+      @include span-columns(4, table);
+      @include shift();
     }
     @include media($screen){
       @include span-columns(4);
@@ -156,21 +156,29 @@ body {
 #skills {
   padding-bottom: 2em;
   @include outer-container;
+  i {
+    font-size: 2em;
+  }
+  #first-row{
+    @include row();
+  }
+  #second-row{
+    @include row();
+  }
   ul {
     padding-left: 0;
-  }
-  li {
-    text-align: center;
-    @include media($mobile){
-      @include span-columns(4);
-    }
-    @include media($tablet){
-      @include span-columns(4);
-      @include shift(2);
-    }
-    @include media($screen){
-      @include span-columns(3);
-      @include shift(0);
+    .skill-category {
+      margin-right: 0px;
+      text-align: center;
+      @include media($mobile){
+        @include span-columns(4);
+      }
+      @include media($tablet){
+        @include span-columns(4);
+      }
+      @include media($screen){
+        @include span-columns(3);
+      }
     }
   }
   p {

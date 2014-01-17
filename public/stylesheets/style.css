@@ -130,13 +130,10 @@ body {
         margin-right: 0; } }
   @media screen and (min-width: 30em) {
     #portfolio .project {
-      display: block;
-      float: left;
-      margin-right: 3.57866%;
-      width: 74.10533%;
-      margin-left: 12.94733%; }
-      #portfolio .project:last-child {
-        margin-right: 0; } }
+      display: table-cell;
+      padding-right: 2.684%;
+      width: 50.89467%;
+      margin-left: 12.94733%; } }
   @media screen and (min-width: 50em) {
     #portfolio .project {
       display: block;
@@ -161,36 +158,53 @@ body {
     display: table; }
   #skills:after {
     clear: both; }
+  #skills i {
+    font-size: 2em; }
+  #skills #first-row {
+    *zoom: 1;
+    display: block; }
+    #skills #first-row:before, #skills #first-row:after {
+      content: " ";
+      display: table; }
+    #skills #first-row:after {
+      clear: both; }
+  #skills #second-row {
+    *zoom: 1;
+    display: block; }
+    #skills #second-row:before, #skills #second-row:after {
+      content: " ";
+      display: table; }
+    #skills #second-row:after {
+      clear: both; }
   #skills ul {
     padding-left: 0; }
-  #skills li {
-    text-align: center; }
-    @media screen and (min-width: 15em) {
-      #skills li {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
-        #skills li:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 30em) {
-      #skills li {
-        display: block;
-        float: left;
-        margin-right: 3.57866%;
-        width: 48.21067%;
-        margin-left: 25.89467%; }
-        #skills li:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 50em) {
-      #skills li {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 23.23176%;
-        margin-left: 0%; }
-        #skills li:last-child {
-          margin-right: 0; } }
+    #skills ul .skill-category {
+      margin-right: 0px;
+      text-align: center; }
+      @media screen and (min-width: 15em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 7.42297%;
+          width: 100%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 3.57866%;
+          width: 48.21067%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 50em) {
+        #skills ul .skill-category {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          #skills ul .skill-category:last-child {
+            margin-right: 0; } }
   #skills p {
     font-size: 1.2em;
     margin: 0.2em; }
