@@ -118,7 +118,7 @@ body {
   #portfolio ul {
     list-style: none;
     padding-left: 0; }
-  @media screen and (max-width: 15em) {
+  @media screen and (min-width: 15em) {
     #portfolio .project {
       display: block;
       float: left;
@@ -148,6 +148,28 @@ body {
     width: 100%;
     border: 1px solid rgba(38, 38, 38, 0.5); }
 
-#about-me img {
-  border-radius: 20%;
-  border: 10px solid #fffb50; }
+#about-me {
+  font-size: 1.2em; }
+  #about-me img {
+    margin-bottom: 1em;
+    border-radius: 20%;
+    border: 10px solid #fffb50; }
+    @media screen and (min-width: 15em) {
+      #about-me img {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        #about-me img:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 30em) {
+      #about-me img {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        #about-me img:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 50em) {
+      #about-me img {
+        width: 20em; } }
