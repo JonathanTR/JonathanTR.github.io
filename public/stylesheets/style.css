@@ -171,5 +171,6 @@ body {
   @media screen and (min-width: 50em) {
     #about-me img {
       width: 20em; } }
-#about-me #self-description {
-  font-size: 1.2em; }
+#about-me #personal-history {
+  font-size: 1.2em;
+  max-width: 80em; }
