@@ -216,3 +216,16 @@ body {
     max-width: 80em;
   }
 }
+
+#contact {
+  background-color: $dusty-red;
+  form {
+    font-family: $headings-font;
+    input {
+      margin: 0.5em;
+      padding-left: 0.5em;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}

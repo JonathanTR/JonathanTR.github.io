@@ -245,3 +245,13 @@ body {
 #about-me #personal-history {
   font-size: 1.2em;
   max-width: 80em; }
+
+#contact {
+  background-color: #c93724; }
+  #contact form {
+    font-family: "Montserrat", "Helvetica", Sans-Serif; }
+    #contact form input {
+      margin: 0.5em;
+      padding-left: 0.5em;
+      border: none;
+      border-radius: 5px; }
