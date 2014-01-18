@@ -178,10 +178,10 @@ body {
       }
       @include media($tablet){
         @include span-columns(4);
-        #first-row{
+        .first-row{
           @include row();
         }
-        #second-row{
+        .second-row{
           @include row();
         }
       }
@@ -214,5 +214,68 @@ body {
   #personal-history {
     font-size: 1.2em;
     max-width: 80em;
+  }
+}
+
+#contact {
+  background-color: $dusty-red;
+  i {
+    padding: 1em 0 0 0;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 0.5em;
+    text-align: center;
+  }
+  form {
+    @include outer-container;
+    font-family: $headings-font;
+    @include media($screen){
+      max-width: 50em;
+    }
+    input {
+      margin: 0 0.75em 0.75em 0;
+      padding: 0.5em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.25em;
+      border-top: 1px solid lighten($charcoal, 35%);
+      @include media($mobile){
+        @include span-columns(4)
+      }
+      @include media($tablet){
+        @include span-columns(4)
+      }
+    }
+    textarea {
+      resize: none;
+      margin: 0 0.75em 0.75em 0;
+      padding: 0.5em;
+      min-height: 5.75em;
+      border: none;
+      border-radius: 5px;
+      border-top: 1px solid lighten($charcoal, 35%);
+      @include media($mobile){
+        @include span-columns(4)
+      }
+      @include media($tablet){
+        @include span-columns(8)
+      }
+    }
+    .submit {
+      @include span-columns(5);
+      color: $charcoal;
+      background-color: $emerald;
+      border-top: none;
+      border-bottom: 2px solid darken($nephritis, 10%);
+      @include linear-gradient(to top, $nephritis, $emerald, $fallback: $emerald);
+      &:focus {
+        outline: none;
+        border-top: 2px solid darken($nephritis, 10%);
+        border-bottom: none;
+      }
+    }
   }
 }

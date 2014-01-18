@@ -191,21 +191,21 @@ body {
           width: 48.21067%; }
           #skills ul .skill-category:last-child {
             margin-right: 0; }
-          #skills ul .skill-category #first-row {
+          #skills ul .skill-category .first-row {
             *zoom: 1;
             display: block; }
-            #skills ul .skill-category #first-row:before, #skills ul .skill-category #first-row:after {
+            #skills ul .skill-category .first-row:before, #skills ul .skill-category .first-row:after {
               content: " ";
               display: table; }
-            #skills ul .skill-category #first-row:after {
+            #skills ul .skill-category .first-row:after {
               clear: both; }
-          #skills ul .skill-category #second-row {
+          #skills ul .skill-category .second-row {
             *zoom: 1;
             display: block; }
-            #skills ul .skill-category #second-row:before, #skills ul .skill-category #second-row:after {
+            #skills ul .skill-category .second-row:before, #skills ul .skill-category .second-row:after {
               content: " ";
               display: table; }
-            #skills ul .skill-category #second-row:after {
+            #skills ul .skill-category .second-row:after {
               clear: both; } }
       @media screen and (min-width: 50em) {
         #skills ul .skill-category {
@@ -245,3 +245,94 @@ body {
 #about-me #personal-history {
   font-size: 1.2em;
   max-width: 80em; }
+
+#contact {
+  background-color: #c93724; }
+  #contact i {
+    padding: 1em 0 0 0;
+    font-size: 2em;
+    display: block;
+    text-align: center; }
+  #contact h1 {
+    margin: 0 0 0.5em;
+    text-align: center; }
+  #contact form {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", "Helvetica", Sans-Serif; }
+    #contact form:before, #contact form:after {
+      content: " ";
+      display: table; }
+    #contact form:after {
+      clear: both; }
+    @media screen and (min-width: 50em) {
+      #contact form {
+        max-width: 50em; } }
+    #contact form input {
+      margin: 0 0.75em 0.75em 0;
+      padding: 0.5em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.25em;
+      border-top: 1px solid #7f7f7f; }
+      @media screen and (min-width: 15em) {
+        #contact form input {
+          display: block;
+          float: left;
+          margin-right: 7.42297%;
+          width: 100%; }
+          #contact form input:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) {
+        #contact form input {
+          display: block;
+          float: left;
+          margin-right: 3.57866%;
+          width: 48.21067%; }
+          #contact form input:last-child {
+            margin-right: 0; } }
+    #contact form textarea {
+      resize: none;
+      margin: 0 0.75em 0.75em 0;
+      padding: 0.5em;
+      min-height: 5.75em;
+      border: none;
+      border-radius: 5px;
+      border-top: 1px solid #7f7f7f; }
+      @media screen and (min-width: 15em) {
+        #contact form textarea {
+          display: block;
+          float: left;
+          margin-right: 7.42297%;
+          width: 100%; }
+          #contact form textarea:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 30em) {
+        #contact form textarea {
+          display: block;
+          float: left;
+          margin-right: 3.57866%;
+          width: 100%; }
+          #contact form textarea:last-child {
+            margin-right: 0; } }
+    #contact form .submit {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      color: #262626;
+      background-color: #2ecc71;
+      border-top: none;
+      border-bottom: 2px solid #1e8449;
+      background-color: #2ecc71;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27ae60), color-stop(100%, #2ecc71));
+      background-image: -webkit-linear-gradient(bottom, #27ae60, #2ecc71);
+      background-image: linear-gradient(to top,#27ae60, #2ecc71); }
+      #contact form .submit:last-child {
+        margin-right: 0; }
+      #contact form .submit:focus {
+        outline: none;
+        border-top: 2px solid #1e8449;
+        border-bottom: none; }

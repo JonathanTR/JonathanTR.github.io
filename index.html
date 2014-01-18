@@ -74,7 +74,7 @@
         <h1>Skills</h1>
         <ul>
 
-          <div id='first-row'>
+          <div class='first-row'>
             <li class='skill-category'>
               <i class='icon-chat'></i>
               <h3>Languages</h3>
@@ -97,7 +97,7 @@
             </li>
           </div>
 
-          <div id='second-row'>
+          <div class='second-row'>
             <li class='skill-category'>
               <i class='icon-th-list'></i>
               <h3>Frameworks</h3>
@@ -153,7 +153,7 @@
           </p>
 
           <p>
-            <b>Right now I'm reading:</b> <a href="http://www.amazon.com/The-Bully-Pulpit-Roosevelt-Journalism/dp/141654786X/ref=sr_1_1?ie=UTF8&qid=1389988235&sr=8-1&keywords=the+bully+pulpit">The Bully Pulpit</a> by Doris Kearnes Goodwin. <em>I learned that:</em> One time, Teddy Roosevelt punched out two political rivals at a bar (he was an elected official at the time). When they regained consciousness, he invited them to sit down for a drink. What a guy!
+            <b>Right now I'm reading:</b> <a href="http://www.amazon.com/The-Bully-Pulpit-Roosevelt-Journalism/dp/141654786X/ref=sr_1_1?ie=UTF8&qid=1389988235&sr=8-1&keywords=the+bully+pulpit">The Bully Pulpit</a> by Doris Kearnes Goodwin. <b>I learned that:</b> One time, Teddy Roosevelt punched out two political rivals at a bar (he was an elected official at the time). When they regained consciousness, he invited them to sit down for a drink. What a guy!
           </p>
         </div>
 
@@ -161,7 +161,27 @@
 
     </div>
 
-    <div id='contact'></div>
+    <div id='contact'>
+      <div class='inner-container'>
+        <i class='icon-mail'></i>
+        <h1>Hit me up</h1>
+        <form action="http://getsimpleform.com/messages?form_api_token=3ba459c3fc94cf57a668a2454cef4f20" method="post">
+
+          <div id='contact-first-row'>
+            <input type='text' name='name' placeholder='name' required/>
+            <input type='text' name='email' placeholder='email' required/>
+          </div>
+
+          <div id='contact-second-row'>
+            <input type='text' name='company' placeholder='company' required/>
+            <input type='text' name='website' placeholder='website'/>
+          </div>
+
+          <textarea name='message' placeholder='what do you want to talk about?' required></textarea>
+          <input class='submit' type='submit' value="let's chat!" />
+        </form>
+      </div>
+    </div>
 
   </div>
 
