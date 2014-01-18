@@ -220,12 +220,41 @@ body {
 #contact {
   background-color: $dusty-red;
   form {
+    @include outer-container;
     font-family: $headings-font;
     input {
-      margin: 0.5em;
-      padding-left: 0.5em;
+      margin: 0 0.75em 0.75em 0;
+      padding: 0.5em;
       border: none;
       border-radius: 5px;
+      font-size: 1.25em;
+      @include media($mobile){
+        @include span-columns(4)
+      }
+      @include media($tablet){
+        @include span-columns(4)
+      }
+      @include media($screen){
+      
+      }
+    }
+    textarea {
+      margin: 0 0.75em 0.75em 0;
+      border-radius: 5px;
+      border: none;
+      padding: 0.5em;
+      @include media($mobile){
+        @include span-columns(4)
+      }
+      @include media($tablet){
+        @include span-columns(8)
+      }
+      @include media($screen){
+        @include span-columns(8)
+      }
+    }
+    .submit {
+      background-color: $emerald;
     }
   }
 }
