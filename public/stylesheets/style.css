@@ -248,6 +248,14 @@ body {
 
 #contact {
   background-color: #c93724; }
+  #contact i {
+    padding: 1em 0 0 0;
+    font-size: 2em;
+    display: block;
+    text-align: center; }
+  #contact h1 {
+    margin: 0 0 0.5em;
+    text-align: center; }
   #contact form {
     *zoom: 1;
     max-width: 68em;
@@ -259,6 +267,9 @@ body {
       display: table; }
     #contact form:after {
       clear: both; }
+    @media screen and (min-width: 50em) {
+      #contact form {
+        max-width: 50em; } }
     #contact form input {
       margin: 0 0.75em 0.75em 0;
       padding: 0.5em;
@@ -282,10 +293,12 @@ body {
           #contact form input:last-child {
             margin-right: 0; } }
     #contact form textarea {
+      resize: none;
       margin: 0 0.75em 0.75em 0;
-      border-radius: 5px;
+      padding: 0.5em;
+      min-height: 5.75em;
       border: none;
-      padding: 0.5em; }
+      border-radius: 5px; }
       @media screen and (min-width: 15em) {
         #contact form textarea {
           display: block;
@@ -302,15 +315,11 @@ body {
           width: 100%; }
           #contact form textarea:last-child {
             margin-right: 0; } }
-      @media screen and (min-width: 50em) {
-        #contact form textarea {
-          display: block;
-          float: left;
-          margin-right: 2.35765%;
-          width: 65.88078%; }
-          #contact form textarea:last-child {
-            margin-right: 0; } }
     #contact form .submit {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 40.29137%;
       color: #262626;
       background-color: #2ecc71;
       border-bottom: 2px solid #1e8449;
@@ -318,6 +327,8 @@ body {
       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27ae60), color-stop(100%, #2ecc71));
       background-image: -webkit-linear-gradient(bottom, #27ae60, #2ecc71);
       background-image: linear-gradient(to top,#27ae60, #2ecc71); }
+      #contact form .submit:last-child {
+        margin-right: 0; }
       #contact form .submit:focus {
         outline: none;
         border-top: 2px solid #1e8449;
