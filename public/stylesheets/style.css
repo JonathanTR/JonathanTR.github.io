@@ -275,7 +275,8 @@ body {
       padding: 0.5em;
       border: none;
       border-radius: 5px;
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      border-top: 1px solid #7f7f7f; }
       @media screen and (min-width: 15em) {
         #contact form input {
           display: block;
@@ -298,7 +299,8 @@ body {
       padding: 0.5em;
       min-height: 5.75em;
       border: none;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border-top: 1px solid #7f7f7f; }
       @media screen and (min-width: 15em) {
         #contact form textarea {
           display: block;
@@ -322,6 +324,7 @@ body {
       width: 40.29137%;
       color: #262626;
       background-color: #2ecc71;
+      border-top: none;
       border-bottom: 2px solid #1e8449;
       background-color: #2ecc71;
       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #27ae60), color-stop(100%, #2ecc71));
