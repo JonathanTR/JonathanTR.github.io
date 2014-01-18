@@ -38,21 +38,19 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $headings-font;
 }
 
-.inner-container{
+.container{
   width: 90%;
-  margin: 0 auto;
-}
-
-body {
-  background-color: $ivory;
-  font-family: $text-font;
-  font-size: $default-font-size;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 @import 'partials/navbar';
 
-#container {
+#page-container {
   padding-top: 50px;
+  background-color: $ivory;
+  font-family: $text-font;
+  font-size: $default-font-size;
 }
 
 #quick-intro {
@@ -128,9 +126,9 @@ body {
 }
 
 #portfolio {
-  @include outer-container;
   padding: 2em 0 4em;
   ul {
+    @include outer-container;
     list-style: none;
     padding-left: 0;
   }
