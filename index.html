@@ -165,12 +165,16 @@
       <div class='inner-container'>
         <h1>Hit me up</h1>
         <form action="http://getsimpleform.com/messages?form_api_token=3ba459c3fc94cf57a668a2454cef4f20" method="post">
-        <input type='text' name='name' placeholder='name' required/>
-        <input type='text' name='email' placeholder='email' required/>
-        <input type='text' name='company' placeholder='company' required/>
-        <input type='text' name='website' placeholder='website'/>
+        <div class='first-row'>
+          <input type='text' name='name' placeholder='name' required/>
+          <input type='text' name='email' placeholder='email' required/>
+        </div>
+        <div class='second-row'>
+          <input type='text' name='company' placeholder='company' required/>
+          <input type='text' name='website' placeholder='website'/>
+        </div>
         <textarea name='message' placeholder='what do you want to talk about?' required></textarea>
-        <input type='submit' value="let's chat" />
+        <input class='submit' type='submit' value="let's chat" />
       </form>
       <br><br><br><br><br><br>
       </div>
