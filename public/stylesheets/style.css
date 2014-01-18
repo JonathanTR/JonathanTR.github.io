@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 #looking-for {
   background-color: #fffb50;
   padding: 2.5% 0;
-  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
   text-align: center; }
   #looking-for .icons {
     margin-top: 1em;
