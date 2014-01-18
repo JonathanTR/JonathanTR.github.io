@@ -1,22 +1,3 @@
-.navbar {
-  position: fixed;
-  margin-bottom: 0;
-  background-color: $charcoal;
-  border: none;
-  width: 100%;
-  border-radius: 0px;
-  a.navbar-brand {padding-left: 0;}
-  .navbar-brand:after {
-    font-family: $headings-font;
-    font-size: 1.5em;
-    line-height: 50px;
-    content: "JTR";
-    @include media($tablet){
-      content: "JonathanTR";
-    }
-    @include media($screen){
-      content: "Jonathan Turnbull-Reilly";
-      font-size: 1.2em;
-    }
-  }
+navbar {
+  
 }
