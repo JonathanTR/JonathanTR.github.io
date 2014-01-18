@@ -3,27 +3,42 @@
 <head>
   <title>JonathanTR</title>
   <meta name="viewport" content="initial-scale=1">
-  <script type="text/javascript" src='public/javascripts/jquery-1.10.2.min.js'></script>
-  <script type="text/javascript" src='public/javascripts/jquery.lettering-0.6.min.js'></script>
+  <script type="text/javascript" src='vendor/jquery/jquery-1.10.2.min.js'></script>
   <link rel="stylesheet" type="text/css" href="">
-  <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="public/stylesheets/vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class='inner-container'>
-    <a class="navbar-brand" href="/"></a>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+    <a href='/' class="navbar-brand"></a>
+
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#menuCollapse">
+        <i class='icon-bar'></i>
+        <i class='icon-bar'></i>
+        <i class='icon-bar'></i>
+      </button>
+
+    <div class='collapse navbar-collapse' id='menuCollapse'>
+
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a class ='active' href="#portfolio">Portfolio</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+
+    </div>
   </div>
 </nav>
 
-  <div id="container">
+  <div id="page-container">
 
     <div id='quick-intro'>
-      <div class='inner-container'>
+      <div class='container'>
         <h1>Hi there! <br><br>My name is <span id='name'>Jonathan Turnbull-Reilly</span> and <br> I'm a web developer.</h1>
-
       </div>
+
       <div id='social-links'>
         <a href="https://github.com/JonathanTR"><i class="icon-github-circled"></i></a>
         <a href="https://twitter.com/jonriles"><i class="icon-twitter"></i></a>
@@ -33,7 +48,7 @@
     </div>
 
     <div id='looking-for'>
-      <div class='inner-container'>
+      <div class='container'>
         <div class='icons'>
           <i class="icon-wrench"></i>
           <i class="icon-cog-alt"></i>
@@ -43,10 +58,9 @@
     </div>
 
     <div id='portfolio'>
-      <div class='inner-container'>
+      <div class='container'>
         <h1>Portfolio</h1>
         <ul>
-
           <li class="project">
             <a href='http://getessence.herokuapp.com'><img src="public/images/Essence.jpg"></a>
             <h4>Essence</h4>
@@ -70,7 +84,7 @@
     </div>
     
     <div id='skills'>
-      <div class='inner-container'>
+      <div class='container'>
         <h1>Skills</h1>
         <ul>
 
@@ -124,7 +138,7 @@
     </div>
 
     <div id='invitation'>
-      <div class='inner-container'>
+      <div class='container'>
         <div class='icons'>
           <i class="icon-laptop"></i>
         </div>
@@ -134,7 +148,7 @@
 
     <div id='about-me'>
 
-      <div class='inner-container'>
+      <div class='container'>
         <h1>About Me</h1>
         <img src="public/images/jonathan_bw.jpg">
 
@@ -143,7 +157,7 @@
             I've been a lot of things: a landscaper, a student, an overnight hotel manager, a writer, a volunteer coordinator, a warehouse manager, a marketing professional, a James Dean impersonater - the list goes on. Nothing has sparked my imagination and interest quite like coding.
           </p>
           <p>
-            I took my first CS class in Python during my last semester of college (I needed to fulfill a lab credit and I didn't want to disect things). It ended up being my favorite class in college. It wasn't until last year, though, that a friend sold me on the idea that I could keep pursuing that dream through <a href="http://www.devbootcamp">Dev Bootcamp</a>, a 9-week hurricane of training in Ruby, Rails, JavaScript, TDD, Git, Databases, learning acceleration techniques, and so much more.
+            I took my first CS class in Python during my last semester of college (I needed to fulfill a lab credit and I didn't want to disect things). It ended up being my favorite class in college. It wasn't until last year, though, that a friend sold me on the idea that I could keep pursuing that dream through <a href="http://www.devbootcamp.com">Dev Bootcamp</a>, a 9-week hurricane of training in Ruby, Rails, JavaScript, TDD, Git, Databases, learning acceleration techniques, and so much more.
           </p>
           <p>
             I was hooked. I have been ever since and I don't see myself stopping <em>any time soon</em>.
@@ -162,7 +176,7 @@
     </div>
 
     <div id='contact'>
-      <div class='inner-container'>
+      <div class='container'>
         <i class='icon-mail'></i>
         <h1>Hit me up</h1>
         <form action="http://getsimpleform.com/messages?form_api_token=3ba459c3fc94cf57a668a2454cef4f20" method="post">
@@ -185,6 +199,7 @@
 
   </div>
 
+  <script type="text/javascript" src='vendor/bootstrap/js/bootstrap.min.js'></script>
   <script type="text/javascript" src='public/javascripts/application.js'></script>
 </body>
 </html>

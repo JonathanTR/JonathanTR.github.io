@@ -1,4 +1,4 @@
-@import url(../../../vendor/bootstrap-navbar/css/bootstrap.min.css);
+@import url(../../../vendor/bootstrap/css/bootstrap.min.css);
 @import url(../../../vendor/fontello-c7b5ebca/css/jonathantr-embedded.css);
 @import url(../../../vendor/fontello-c7b5ebca/css/jonathantr-codes.css);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400italic,400,700|Alegreya+SC:400,400italic);
@@ -10,39 +10,41 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica", Sans-Serif; }
 
-.inner-container {
+.container {
   width: 90%;
-  margin: 0 auto; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
-body {
+.navbar {
+  background-color: #262626;
+  border-bottom: none;
+  font-family: "Montserrat", "Helvetica", Sans-Serif; }
+  .navbar .navbar-brand:after {
+    color: #ecf0f1; }
+    @media screen and (min-width: 15em) {
+      .navbar .navbar-brand:after {
+        content: 'JTR'; } }
+    @media screen and (min-width: 30em) {
+      .navbar .navbar-brand:after {
+        content: 'JonathanTR'; } }
+    @media screen and (min-width: 50em) {
+      .navbar .navbar-brand:after {
+        content: 'Jonathan Turnbull-Reilly'; } }
+  .navbar .navbar-collapse {
+    border-top: none; }
+  .navbar button.navbar-toggle {
+    border: 1px solid #ecf0f1; }
+    .navbar button.navbar-toggle i.icon-bar {
+      background-color: #ecf0f1; }
+
+.affix, .navbar-fixed-top {
+  -webkit-transform: scale3d(1, 1, 1); }
+
+#page-container {
+  padding-top: 50px;
   background-color: white;
   font-family: "Alegreya", "Georgia", Palatino, Serif;
   font-size: 15px; }
-
-.navbar {
-  position: fixed;
-  margin-bottom: 0;
-  background-color: #262626;
-  border: none;
-  width: 100%;
-  border-radius: 0px; }
-  .navbar a.navbar-brand {
-    padding-left: 0; }
-  .navbar .navbar-brand:after {
-    font-family: "Montserrat", "Helvetica", Sans-Serif;
-    font-size: 1.5em;
-    line-height: 50px;
-    content: "JTR"; }
-    @media screen and (min-width: 30em) {
-      .navbar .navbar-brand:after {
-        content: "JonathanTR"; } }
-    @media screen and (min-width: 50em) {
-      .navbar .navbar-brand:after {
-        content: "Jonathan Turnbull-Reilly";
-        font-size: 1.2em; } }
-
-#container {
-  padding-top: 50px; }
 
 #quick-intro {
   padding-top: 7.5px;
@@ -88,7 +90,6 @@ body {
 #looking-for {
   background-color: #fffb50;
   padding: 2.5% 0;
-  /*border-bottom: 1px solid transparentize($charcoal, 0.5);*/
   text-align: center; }
   #looking-for .icons {
     margin-top: 1em;
@@ -108,19 +109,19 @@ body {
     font-size: 2em; }
 
 #portfolio {
-  *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em 0 4em; }
-  #portfolio:before, #portfolio:after {
-    content: " ";
-    display: table; }
-  #portfolio:after {
-    clear: both; }
+  padding: 3em 0 4em; }
   #portfolio ul {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     padding-left: 0; }
+    #portfolio ul:before, #portfolio ul:after {
+      content: " ";
+      display: table; }
+    #portfolio ul:after {
+      clear: both; }
   @media screen and (min-width: 15em) {
     #portfolio .project {
       display: block;
@@ -219,32 +220,34 @@ body {
     font-size: 1.2em;
     margin: 0.2em; }
 
-#about-me img {
-  margin-bottom: 0.5em;
-  border-radius: 20%;
-  border: 10px solid #fffb50; }
-  @media screen and (min-width: 15em) {
-    #about-me img {
-      display: block;
-      float: left;
-      margin-right: 7.42297%;
-      width: 100%; }
-      #about-me img:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 30em) {
-    #about-me img {
-      display: block;
-      float: left;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
-      #about-me img:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 50em) {
-    #about-me img {
-      width: 20em; } }
-#about-me #personal-history {
-  font-size: 1.2em;
-  max-width: 80em; }
+#about-me {
+  padding-top: 3em; }
+  #about-me img {
+    margin-bottom: 0.5em;
+    border-radius: 20%;
+    border: 10px solid #fffb50; }
+    @media screen and (min-width: 15em) {
+      #about-me img {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        #about-me img:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 30em) {
+      #about-me img {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        #about-me img:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 50em) {
+      #about-me img {
+        width: 20em; } }
+  #about-me #personal-history {
+    font-size: 1.2em;
+    max-width: 80em; }
 
 #contact {
   background-color: #c93724; }
@@ -322,6 +325,7 @@ body {
       float: left;
       margin-right: 2.35765%;
       width: 40.29137%;
+      margin-left: 29.85432%;
       color: #262626;
       background-color: #2ecc71;
       border-top: none;

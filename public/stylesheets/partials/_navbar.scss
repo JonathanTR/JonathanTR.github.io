@@ -1,22 +1,31 @@
 .navbar {
-  position: fixed;
-  margin-bottom: 0;
   background-color: $charcoal;
-  border: none;
-  width: 100%;
-  border-radius: 0px;
-  a.navbar-brand {padding-left: 0;}
+  border-bottom: none;
+  font-family: $headings-font;
   .navbar-brand:after {
-    font-family: $headings-font;
-    font-size: 1.5em;
-    line-height: 50px;
-    content: "JTR";
+    color: $clouds;
+    @include media($mobile){
+      content: 'JTR';
+    }
     @include media($tablet){
-      content: "JonathanTR";
+      content: 'JonathanTR';
     }
     @include media($screen){
-      content: "Jonathan Turnbull-Reilly";
-      font-size: 1.2em;
+      content: 'Jonathan Turnbull-Reilly';
     }
   }
+  .navbar-collapse {
+    border-top: none;
+  }
+  button.navbar-toggle {
+    border: 1px solid $clouds;
+    i.icon-bar {
+      background-color: $clouds;
+    }
+  }
+}
+
+// Webkit fix
+.affix,.navbar-fixed-top{
+  -webkit-transform: scale3d(1,1,1);
 }
