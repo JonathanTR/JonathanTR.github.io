@@ -10,39 +10,16 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica", Sans-Serif; }
 
-.inner-container {
+.container {
   width: 90%;
-  margin: 0 auto; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
-body {
+#page-container {
+  padding-top: 50px;
   background-color: white;
   font-family: "Alegreya", "Georgia", Palatino, Serif;
   font-size: 15px; }
-
-.navbar {
-  position: fixed;
-  margin-bottom: 0;
-  background-color: #262626;
-  border: none;
-  width: 100%;
-  border-radius: 0px; }
-  .navbar a.navbar-brand {
-    padding-left: 0; }
-  .navbar .navbar-brand:after {
-    font-family: "Montserrat", "Helvetica", Sans-Serif;
-    font-size: 1.5em;
-    line-height: 50px;
-    content: "JTR"; }
-    @media screen and (min-width: 30em) {
-      .navbar .navbar-brand:after {
-        content: "JonathanTR"; } }
-    @media screen and (min-width: 50em) {
-      .navbar .navbar-brand:after {
-        content: "Jonathan Turnbull-Reilly";
-        font-size: 1.2em; } }
-
-#container {
-  padding-top: 50px; }
 
 #quick-intro {
   padding-top: 7.5px;
