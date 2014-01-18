@@ -178,10 +178,10 @@ body {
       }
       @include media($tablet){
         @include span-columns(4);
-        #first-row{
+        .first-row{
           @include row();
         }
-        #second-row{
+        .second-row{
           @include row();
         }
       }
