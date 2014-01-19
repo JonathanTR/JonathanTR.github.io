@@ -64,6 +64,9 @@ h1,h2,h3,h4,h5,h6 {
     padding: 12em 10% 15em;
     text-align: center;
   }
+  @include media($screen){
+    padding: 10em 20% 14em;
+  }
   h1 {
     padding: 0.5em;
     background-color: transparentize($clouds, 0.25);
