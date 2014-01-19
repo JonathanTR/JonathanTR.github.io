@@ -21,9 +21,13 @@
     border-top: none;
   }
   button.navbar-toggle {
+    margin-right: 0em;
     border: 1px solid $clouds;
     i.icon-bar {
       background-color: $clouds;
+    }
+    &:hover{
+      background-color: lighten($charcoal, 10%);
     }
   }
 }
