@@ -59,8 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #262626; }
   @media screen and (min-width: 30em) {
     #quick-intro {
-      padding: 6em 10% 12em;
       background-size: cover;
+      padding: 12em 10% 15em;
       text-align: center; } }
   #quick-intro h1 {
     padding: 0.5em;
@@ -98,6 +98,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fffb50;
   padding: 2.5% 0;
   text-align: center; }
+  @media screen and (min-width: 30em) {
+    #looking-for {
+      padding: 3em 0; } }
   #looking-for .icons {
     margin-top: 1em;
     text-align: center;
