@@ -2,6 +2,9 @@
   background-color: $charcoal;
   border-bottom: none;
   font-family: $headings-font;
+  .navbar-brand {
+    padding-left: 0em;
+  }
   .navbar-brand:after {
     color: $clouds;
     @include media($mobile){

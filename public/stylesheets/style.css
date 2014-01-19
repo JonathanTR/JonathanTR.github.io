@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #262626;
   border-bottom: none;
   font-family: "Montserrat", "Helvetica", Sans-Serif; }
+  .navbar .navbar-brand {
+    padding-left: 0em; }
   .navbar .navbar-brand:after {
     color: #ecf0f1; }
     @media screen and (min-width: 15em) {
@@ -33,9 +35,12 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .navbar-collapse {
     border-top: none; }
   .navbar button.navbar-toggle {
+    margin-right: 0em;
     border: 1px solid #ecf0f1; }
     .navbar button.navbar-toggle i.icon-bar {
       background-color: #ecf0f1; }
+    .navbar button.navbar-toggle:hover {
+      background-color: #404040; }
 
 .affix, .navbar-fixed-top {
   -webkit-transform: scale3d(1, 1, 1); }
