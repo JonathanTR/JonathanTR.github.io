@@ -1,31 +1,31 @@
-.navbar {
-  background-color: $charcoal;
-  border-bottom: none;
-  font-family: $headings-font;
-  .navbar-brand:after {
-    color: $clouds;
-    @include media($mobile){
-      content: 'JTR';
-    }
-    @include media($tablet){
-      content: 'JonathanTR';
-    }
-    @include media($screen){
-      content: 'Jonathan Turnbull-Reilly';
-    }
-  }
-  .navbar-collapse {
-    border-top: none;
-  }
-  button.navbar-toggle {
-    border: 1px solid $clouds;
-    i.icon-bar {
-      background-color: $clouds;
-    }
-  }
-}
+// .navbar {
+//   background-color: $charcoal;
+//   border-bottom: none;
+//   font-family: $headings-font;
+//   .navbar-brand:after {
+//     color: $clouds;
+//     @include media($mobile){
+//       content: 'JTR';
+//     }
+//     @include media($tablet){
+//       content: 'JonathanTR';
+//     }
+//     @include media($screen){
+//       content: 'Jonathan Turnbull-Reilly';
+//     }
+//   }
+//   .navbar-collapse {
+//     border-top: none;
+//   }
+//   button.navbar-toggle {
+//     border: 1px solid $clouds;
+//     i.icon-bar {
+//       background-color: $clouds;
+//     }
+//   }
+// }
 
-// Webkit fix
-.affix,.navbar-fixed-top{
-  -webkit-transform: scale3d(1,1,1);
-}
+// // Webkit fix
+// .affix,.navbar-fixed-top{
+//   -webkit-transform: scale3d(1,1,1);
+// }
