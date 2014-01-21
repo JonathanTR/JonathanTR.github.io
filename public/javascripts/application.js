@@ -15,4 +15,7 @@ $(document).ready(function(){
   $('.nav li a').on('click', function(){
     $('.navbar-collapse.in').collapse('hide');
   })
+  $('.navbar-brand').on('click', function(){
+    $('.navbar-collapse.in').collapse('hide');
+  })
 });
