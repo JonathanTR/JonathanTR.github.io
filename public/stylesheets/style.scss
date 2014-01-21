@@ -169,10 +169,10 @@ h1,h2,h3,h4,h5,h6 {
   padding: 3em 0 3em;
   text-align: center;
   @include media($tablet){
-    height: 90vh;
+    min-height: 90vh;
   }
   @include media($screen){
-    height: 65vh;
+    min-height: 65vh;
   }
   i {
     font-size: 2em;
@@ -317,7 +317,7 @@ h1,h2,h3,h4,h5,h6 {
       }
       @include media($tablet){
         @include span-columns(8);
-        height: 30em;
+        height: 20em;
         font-size: 1.25em;
       }
       @include media($screen){

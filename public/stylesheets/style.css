@@ -180,10 +180,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
   @media screen and (min-width: 30em) {
     #skills {
-      height: 90vh; } }
+      min-height: 90vh; } }
   @media screen and (min-width: 50em) {
     #skills {
-      height: 65vh; } }
+      min-height: 65vh; } }
   #skills i {
     font-size: 2em; }
   #skills ul {
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
           float: left;
           margin-right: 3.57866%;
           width: 100%;
-          height: 30em;
+          height: 20em;
           font-size: 1.25em; }
           #contact form textarea:last-child {
             margin-right: 0; } }
