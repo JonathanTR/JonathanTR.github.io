@@ -1,5 +1,7 @@
+$navbar-color: $peter_river;
+
 .navbar {
-  background-color: $peter_river;
+  background-color: $navbar-color;
   border-bottom: none;
   font-family: $headings-font;
   .navbar-brand {
@@ -20,7 +22,10 @@
   .navbar-collapse {
     border-top: none;
     li a {
-      color: lighten($peter_river, 90%)
+      color: $clouds;
+      &:hover {
+        color: darken($clouds, 10%)
+      }
     }
   }
   button.navbar-toggle {
@@ -30,7 +35,10 @@
       background-color: $clouds;
     }
     &:hover{
-      background-color: lighten($charcoal, 10%);
+      background-color: lighten($navbar-color, 10%);
+    }
+    &:focus{
+      background-color: $navbar-color;
     }
   }
 }
