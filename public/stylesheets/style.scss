@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
   }
   @include media($screen){
-    height: 95vh;
+    min-height: 95vh;
   }
   h1 {
     padding: 0.5em;
@@ -136,7 +136,7 @@ h1,h2,h3,h4,h5,h6 {
   background-color: $midnight_blue;
   color: white;
   @include media($screen){
-    height: 100vh;
+    min-height: 100vh;
   }
   ul {
     @include outer-container;
@@ -220,7 +220,7 @@ h1,h2,h3,h4,h5,h6 {
     // height: 25vh;
   }
   @include media($screen){
-    height: 35vh;
+    min-height: 35vh;
   }
   a{
     text-decoration: none;
@@ -239,7 +239,7 @@ h1,h2,h3,h4,h5,h6 {
 #about-me {
   padding: 3em 0 ;
   @include media($screen){
-    height: 100vh;
+    min-height: 100vh;
   }
   h1 {
     margin-bottom: 1em;
@@ -272,7 +272,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   @include media($screen){
     padding-top: 3em;
-    height: 100vh;
+    min-height: 100vh;
   }
   i {
     padding: 1em 0 0 0;

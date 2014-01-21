@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center; } }
   @media screen and (min-width: 50em) {
     #quick-intro {
-      height: 95vh; } }
+      min-height: 95vh; } }
   #quick-intro h1 {
     padding: 0.5em;
     background-color: rgba(236, 240, 241, 0.75);
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white; }
   @media screen and (min-width: 50em) {
     #portfolio {
-      height: 100vh; } }
+      min-height: 100vh; } }
   #portfolio ul {
     *zoom: 1;
     max-width: 68em;
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
   @media screen and (min-width: 50em) {
     #invitation {
-      height: 35vh; } }
+      min-height: 35vh; } }
   #invitation a {
     text-decoration: none;
     color: #262626; }
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3em 0; }
   @media screen and (min-width: 50em) {
     #about-me {
-      height: 100vh; } }
+      min-height: 100vh; } }
   #about-me h1 {
     margin-bottom: 1em; }
   #about-me img {
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width: 50em) {
     #contact {
       padding-top: 3em;
-      height: 100vh; } }
+      min-height: 100vh; } }
   #contact i {
     padding: 1em 0 0 0;
     font-size: 2em;
