@@ -155,7 +155,7 @@ h1,h2,h3,h4,h5,h6 {
   padding: 3em 0 3em;
   text-align: center;
   @include media($tablet){
-    height: 75vh;
+    height: 90vh;
   }
   @include media($screen){
     height: 65vh;
@@ -199,11 +199,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #invitation {
-  padding: 2.5% 0;
+  padding: 3em 0;
   background-color: $turquoise;
   text-align: center;
   @include media($tablet){
-    height: 25vh;
+    // height: 25vh;
   }
   @include media($screen){
     height: 35vh;

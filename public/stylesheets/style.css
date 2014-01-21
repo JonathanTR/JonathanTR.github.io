@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
   @media screen and (min-width: 30em) {
     #skills {
-      height: 75vh; } }
+      height: 90vh; } }
   @media screen and (min-width: 50em) {
     #skills {
       height: 65vh; } }
@@ -236,12 +236,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.2em; }
 
 #invitation {
-  padding: 2.5% 0;
+  padding: 3em 0;
   background-color: #1abc9c;
   text-align: center; }
-  @media screen and (min-width: 30em) {
-    #invitation {
-      height: 25vh; } }
   @media screen and (min-width: 50em) {
     #invitation {
       height: 35vh; } }
