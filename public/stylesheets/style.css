@@ -119,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     text-align: center;
     font-size: 1.5em; }
+  #looking-for #quick-about {
+    font-family: "Alegreya", "Georgia", Palatino, Serif; }
 
 #portfolio {
   padding: 3em 0 4em; }
@@ -257,6 +259,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     text-align: center;
     font-size: 2em; }
+  #invitation a #want-to {
+    font-family: "Alegreya", "Georgia", Palatino, Serif; }
 
 #about-me {
   padding: 3em 0; }

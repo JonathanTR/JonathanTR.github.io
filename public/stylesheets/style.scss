@@ -126,6 +126,9 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: 1.5em;
   }
+  #quick-about {
+    font-family: $text-font;
+  }
 }
 
 #portfolio {
@@ -224,6 +227,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 1em;
     text-align: center;
     font-size: 2em;
+  }
+  a #want-to {
+    font-family: $text-font;
   }
 }
 
