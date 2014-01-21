@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
           font-size: 2em; } }
 
 #looking-for {
-  background-color: #fffb50;
+  background-color: #f1c40f;
   padding: 2.5% 0;
   text-align: center; }
   @media screen and (min-width: 30em) {
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #invitation {
   padding: 2.5% 0;
-  background-color: #3fc0f2;
+  background-color: #1abc9c;
   text-align: center; }
   #invitation a {
     text-decoration: none;
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   #about-me img {
     margin-bottom: 0.5em;
     border-radius: 20%;
-    border: 10px solid #fffb50; }
+    border: 10px solid #f1c40f; }
     @media screen and (min-width: 15em) {
       #about-me img {
         display: block;
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 80em; }
 
 #contact {
-  background-color: #c93724; }
+  background-color: #c0392b; }
   #contact i {
     padding: 1em 0 0 0;
     font-size: 2em;
