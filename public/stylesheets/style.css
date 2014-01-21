@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0px; }
 
 .navbar {
-  background-color: #262626;
+  background-color: #3498db;
   border-bottom: none;
   font-family: "Montserrat", "Helvetica", Sans-Serif; }
   .navbar .navbar-brand {
@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6 {
         content: 'Jonathan Turnbull-Reilly'; } }
   .navbar .navbar-collapse {
     border-top: none; }
+    .navbar .navbar-collapse li a {
+      color: white; }
   .navbar button.navbar-toggle {
     margin-right: 0em;
     border: 1px solid #ecf0f1; }
@@ -167,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #skills {
   background-color: #ecf0f1;
-  padding: 2em 0 2em;
+  padding: 3em 0 3em;
   text-align: center; }
   #skills i {
     font-size: 2em; }

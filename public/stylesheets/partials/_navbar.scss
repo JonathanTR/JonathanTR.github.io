@@ -1,5 +1,5 @@
 .navbar {
-  background-color: $charcoal;
+  background-color: $peter_river;
   border-bottom: none;
   font-family: $headings-font;
   .navbar-brand {
@@ -19,6 +19,9 @@
   }
   .navbar-collapse {
     border-top: none;
+    li a {
+      color: lighten($peter_river, 90%)
+    }
   }
   button.navbar-toggle {
     margin-right: 0em;
