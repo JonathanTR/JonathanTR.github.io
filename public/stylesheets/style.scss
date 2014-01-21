@@ -57,7 +57,15 @@ h1,h2,h3,h4,h5,h6 {
   padding-bottom: 0px;
   background-position: center;
   background-size: 40em;
-  background: url(../images/laptop.jpg) no-repeat;
+  @include media($mobile){
+    background: url(../images/laptop-smaller.jpg) no-repeat;
+  }
+  @include media($tablet){
+    background: url(../images/laptop-smaller.jpg) no-repeat;
+  }
+  @include media($screen){
+    background: url(../images/laptop.jpg) no-repeat;
+  }
   color: $charcoal;
   @include media($tablet){
     @include background-size(cover);
