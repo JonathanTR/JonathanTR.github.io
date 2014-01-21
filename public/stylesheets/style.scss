@@ -318,6 +318,7 @@ h1,h2,h3,h4,h5,h6 {
       @include media($tablet){
         @include span-columns(8);
         height: 30em;
+        font-size: 1.25em;
       }
       @include media($screen){
         height: 15em;
