@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
   }
   @include media($screen){
-    padding: 10em 20% 14em;
+    height: 95vh;
   }
   h1 {
     padding: 0.5em;
@@ -111,6 +111,8 @@ h1,h2,h3,h4,h5,h6 {
   @include media($tablet){
     padding: 3em 0;
   }
+  @include media($screen){
+  }
   .icons{
     margin-top: 1em;
     text-align: center;
@@ -118,29 +120,18 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-#invitation {
-  padding: 2.5% 0;
-  background-color: $turquoise;
-  text-align: center;
-  a{
-    text-decoration: none;
-    color: $charcoal;
-  }
-  .icons{
-    margin-top: 1em;
-    text-align: center;
-    font-size: 2em;
-  }
-}
-
 #portfolio {
   padding: 3em 0 4em;
+  @include media($screen){
+    height: 100vh;
+  }
   ul {
     @include outer-container;
     list-style: none;
     padding-left: 0;
   }
   .project {
+    padding: 2em 0;
     @include media($mobile){
       @include span-columns(4 of 4);
     }
@@ -163,6 +154,9 @@ h1,h2,h3,h4,h5,h6 {
   background-color: $clouds;
   padding: 3em 0 3em;
   text-align: center;
+  @include media($screen){
+    height: 65vh;
+  }
   i {
     font-size: 2em;
   }
@@ -201,8 +195,29 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+#invitation {
+  padding: 2.5% 0;
+  background-color: $turquoise;
+  text-align: center;
+  @include media($screen){
+    height: 35vh;
+  }
+  a{
+    text-decoration: none;
+    color: $charcoal;
+  }
+  .icons{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
 #about-me {
   padding: 3em 0 ;
+  @include media($screen){
+    height: 100vh;
+  }
   img {
     margin-bottom: 0.5em;
     border-radius: 20%;
@@ -225,6 +240,10 @@ h1,h2,h3,h4,h5,h6 {
 
 #contact {
   background-color: $pomegranate;
+  @include media($screen){
+    padding-top: 3em;
+    height: 100vh;
+  }
   i {
     padding: 1em 0 0 0;
     font-size: 2em;
@@ -269,6 +288,9 @@ h1,h2,h3,h4,h5,h6 {
       @include media($tablet){
         @include span-columns(8)
       }
+      @include media($screen){
+        height: 15em;
+      }
     }
     .submit {
       @include span-columns(5);
@@ -278,6 +300,9 @@ h1,h2,h3,h4,h5,h6 {
       border-top: none;
       border-bottom: 2px solid darken($nephritis, 10%);
       @include linear-gradient(to top, $nephritis, $emerald, $fallback: $emerald);
+      @include media($screen){
+        margin-top: 1.5em;
+      }
       &:focus {
         outline: none;
         border-top: 2px solid darken($nephritis, 10%);
