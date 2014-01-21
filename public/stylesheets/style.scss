@@ -133,6 +133,8 @@ h1,h2,h3,h4,h5,h6 {
 
 #portfolio {
   padding: 3em 0 4em;
+  background-color: $midnight_blue;
+  color: white;
   @include media($screen){
     height: 100vh;
   }
@@ -143,6 +145,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   .project {
     padding: 2em 0;
+    font-size: 1.2em;
     @include media($mobile){
       @include span-columns(4 of 4);
     }
