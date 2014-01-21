@@ -241,10 +241,13 @@ h1,h2,h3,h4,h5,h6 {
   @include media($screen){
     height: 100vh;
   }
+  h1 {
+    margin-bottom: 1em;
+  }
   img {
     margin-bottom: 0.5em;
     border-radius: 20%;
-    border: 10px solid $sunflower;
+    border: 10px solid $pumpkin;
     @include media($mobile){
       @include span-columns(4);
     }
