@@ -126,10 +126,15 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: 1.5em;
   }
+  #quick-about {
+    font-family: $text-font;
+  }
 }
 
 #portfolio {
   padding: 3em 0 4em;
+  background-color: $midnight_blue;
+  color: white;
   @include media($screen){
     height: 100vh;
   }
@@ -140,6 +145,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   .project {
     padding: 2em 0;
+    font-size: 1.2em;
     @include media($mobile){
       @include span-columns(4 of 4);
     }
@@ -163,7 +169,7 @@ h1,h2,h3,h4,h5,h6 {
   padding: 3em 0 3em;
   text-align: center;
   @include media($tablet){
-    height: 75vh;
+    height: 90vh;
   }
   @include media($screen){
     height: 65vh;
@@ -207,11 +213,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #invitation {
-  padding: 2.5% 0;
+  padding: 3em 0;
   background-color: $turquoise;
   text-align: center;
   @include media($tablet){
-    height: 25vh;
+    // height: 25vh;
   }
   @include media($screen){
     height: 35vh;
@@ -225,6 +231,9 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: 2em;
   }
+  a #want-to {
+    font-family: $text-font;
+  }
 }
 
 #about-me {
@@ -232,10 +241,13 @@ h1,h2,h3,h4,h5,h6 {
   @include media($screen){
     height: 100vh;
   }
+  h1 {
+    margin-bottom: 1em;
+  }
   img {
     margin-bottom: 0.5em;
     border-radius: 20%;
-    border: 10px solid $sunflower;
+    border: 10px solid $pumpkin;
     @include media($mobile){
       @include span-columns(4);
     }
@@ -306,6 +318,7 @@ h1,h2,h3,h4,h5,h6 {
       @include media($tablet){
         @include span-columns(8);
         height: 30em;
+        font-size: 1.25em;
       }
       @include media($screen){
         height: 15em;
