@@ -154,6 +154,9 @@ h1,h2,h3,h4,h5,h6 {
   background-color: $clouds;
   padding: 3em 0 3em;
   text-align: center;
+  @include media($tablet){
+    height: 75vh;
+  }
   @include media($screen){
     height: 65vh;
   }
@@ -199,6 +202,9 @@ h1,h2,h3,h4,h5,h6 {
   padding: 2.5% 0;
   background-color: $turquoise;
   text-align: center;
+  @include media($tablet){
+    height: 25vh;
+  }
   @include media($screen){
     height: 35vh;
   }
@@ -240,6 +246,10 @@ h1,h2,h3,h4,h5,h6 {
 
 #contact {
   background-color: $pomegranate;
+  @include media($tablet){
+    padding-top: 3em;
+    height: 100vh;
+  }
   @include media($screen){
     padding-top: 3em;
     height: 100vh;
@@ -286,7 +296,8 @@ h1,h2,h3,h4,h5,h6 {
         @include span-columns(4)
       }
       @include media($tablet){
-        @include span-columns(8)
+        @include span-columns(8);
+        height: 30em;
       }
       @include media($screen){
         height: 15em;
@@ -300,6 +311,9 @@ h1,h2,h3,h4,h5,h6 {
       border-top: none;
       border-bottom: 2px solid darken($nephritis, 10%);
       @include linear-gradient(to top, $nephritis, $emerald, $fallback: $emerald);
+      @include media($tablet){
+        margin-top: 1.5em;
+      }
       @include media($screen){
         margin-top: 1.5em;
       }
