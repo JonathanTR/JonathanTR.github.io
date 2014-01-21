@@ -58,8 +58,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0px;
   background-position: center;
   background-size: 40em;
-  background: url(../images/laptop.jpg) no-repeat;
   color: #262626; }
+  @media screen and (min-width: 15em) {
+    #quick-intro {
+      background: url(../images/laptop-smaller.jpg) no-repeat; } }
+  @media screen and (min-width: 30em) {
+    #quick-intro {
+      background: url(../images/laptop-smaller.jpg) no-repeat; } }
+  @media screen and (min-width: 50em) {
+    #quick-intro {
+      background: url(../images/laptop.jpg) no-repeat; } }
   @media screen and (min-width: 30em) {
     #quick-intro {
       background-size: cover;
