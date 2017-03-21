@@ -1,0 +1,42 @@
+ul {
+  padding-left: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+  color: lightcoral;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.link:hover { border-bottom: 2px solid lightcoral; }
+.link:visited { color: lightcoral; }
+
+.portrait {
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.section {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8em;
+  margin: 0 auto;
+  max-width: 73%;
+}
+
+.section--hero {
+  margin-top: 3em;
+  text-align: center;
+}
