@@ -8,23 +8,32 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
 </head>
 <body>
+  <script type="text/javascript">
+    var toggleAbout = function () {
+      var about = document.getElementById('aboutMe')
+      if (about.style.display === 'block') {
+        about.style.display = 'none';
+      } else {
+        about.style.display = 'block';
+      };
+    }
+  </script>
   <section class='section section--hero'>
     <img alt="My grinning mug" class='portrait' src='portrait-cropped.jpg' title='My grinning mug'/>
-    <h1 class='section--title'>jonathan turnbull-reilly</h1>
+    <h1 class='section--title'>Jonathan Turnbull-Reilly</h1>
     <address class='address'>
-      <a class='link' href='https://github.com/JonathanTR' target='_blank'>github</a>
-      <a class='link' href='http://www.linkedin.com/in/jonathantr' target='_blank'>linked in</a>
-      <a class='link' href='https://twitter.com/jonriles' target='_blank'>twitter</a>
-      <a class='link' href="#">about me</a>
+      <a class='link' href="#" onclick="toggleAbout()">About</a>
+      <a class='link' href='http://www.linkedin.com/in/jonathantr' target='_blank'>LinkedIn</a>
+      <a class='link' href='https://github.com/JonathanTR' target='_blank'>Github</a>
     </address>
   </section>
-  <section class='section'>
+  <section class='section' id='aboutMe'>
     <h2>About Me</h2>
     <p>
       I've spent the last three years working with a team of stellar engineers, designers, and product managers to deliver a beautiful product experience for our video hosting customers at Wistia.
     </p>
 
-    <h3>What I’ve worked on</h3>
+    <h2>What I’ve worked on</h2>
     <p>
       I worked on a ton of projects I was proud of at Wistia. Here are some highlights:
     </p>
@@ -47,7 +56,7 @@
       <li>Co-founded and co-chaired Diverstia, Wistia's employee-led diversity and inclusion initiative, where we hosted speakers, movie nights, and lunch discussions, while also working with the executive team to develop policies and initiatives that would help the company become more attractive to the widest possible range of candidates. </li>
     </ul>
 
-    <h3>Side Projects</h3>
+    <h2>Side Projects</h2>
     <p>
       On the side, I volunteer with the Progressive Coder's network, a nationwide group of programmers, designers, and others who work together to support progressive advocacy initiatives around the country. Most recently, I've been bootstrapping a call tool (React frontend, Rails API backend, deployed with Docker on Digital Ocean) for a canvassing group called Knock Every Door.
     </p>
@@ -56,14 +65,14 @@
       I also wrote Typedash.xyz to motivate myself and some friends to sit down and just write (I do short stories in my spare time). One friend said of Typedash, and I quote, "I finished my MFA thesis on it."
     </p>
 
-    <h3>Things I'm good at</h3>
+    <h2>Things I'm good at</h2>
     <p>
       Non-technical: I love direct collaboration. Pair programming is my jam. I also really enjoy helping to develop and refine product decisions with an engineering perspective. I also just love learning new things.
     <br/>
       Technical: I started out as a Ruby developer, but the front end is where I really find my flow. That said, I'm always down to jump on a back end challenge and more recently I've been dipping my toes into the DevOps waters for some of my volunteer projects.
     </p>
 
-    <h3>What I’m looking to do next</h3>
+    <h2>What I’m looking to do next</h2>
 
     <p>
       Right now I'm looking for companies with a strong social mission and a deep culture of collaboration, mentorship, and personal growth. If that's you, I'd love to get in touch.
