@@ -16,7 +16,11 @@ p {
 ul {
   padding-left: 1em;
 }
-#aboutMe {
+::selection {
+  background: lightcoral;
+  color: white;
+}
+#about-me {
   display: none;
 }
 .address {
@@ -36,7 +40,7 @@ ul {
 .portrait {
   border-radius: 50%;
   height: 150px;
-  margin: 0 auto 0.7em;
+  margin: 0 auto;
 }
 .section {
   font-family: 'Open Sans', sans-serif;
