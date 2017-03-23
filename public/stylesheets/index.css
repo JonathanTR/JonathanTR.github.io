@@ -46,9 +46,10 @@ ul {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.8em;
   margin: 0 auto;
-  max-width: 76%;
+  width: 79%;
+  max-width: 790px
 }
 .section--hero {
-  margin-top: 4em;
+  margin-top: 24vh;
   text-align: center;
 }
